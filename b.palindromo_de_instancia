@@ -1,0 +1,18 @@
+class Palindromo:
+    def __init__(self, palabra):
+        self.palabra = palabra.lower()
+    
+    def test(self):
+        return self.palabra == self.palabra[::-1]
+    
+    def __del__(self):
+        print(self.palabra.upper())
+        
+# Ejemplo de uso
+p = Palindromo("radar")
+print(p.test())  # True
+del p
+
+p = Palindromo("sonar")
+print(p.test())  # False
+del p

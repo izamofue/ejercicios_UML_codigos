@@ -1,0 +1,11 @@
+import re
+
+class Palindromo:
+    @classmethod
+    def esPalindromo(cls, cadena):
+        # Eliminar los caracteres no alfanuméricos
+        cadena_limpia = re.sub('[^a-zA-Z0-9]', '', cadena)
+        # Convertir todo a minúsculas
+        cadena_limpia = cadena_limpia.lower()
+        # Comprobar si la cadena es igual a su inversa
+        return cadena_limpia == cadena_limpia[::-1]

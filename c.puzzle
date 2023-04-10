@@ -1,0 +1,11 @@
+Este código crea una clase llamada A con dos métodos: 'z' y 'y'. El método 'z' simplemente devuelve la instancia actual de la clase A, mientras que el método 'y' toma un argumento 't' y devuelve la longitud de 't'.
+
+Luego, crea una instancia de la clase A llamada 'a' y la asigna a la variable 'a'. Luego asigna el método 'z' de la instancia 'a' a la variable 'y' (es decir, 'y' es una referencia al método 'z' de la instancia 'a'). Luego, llama al método 'z' de la instancia 'a' utilizando 'y(a)' y lo imprime en la pantalla.
+
+Después, crea otra instancia de la clase A llamada 'aa' y la asigna a la variable 'aa'. Luego, imprime en la pantalla si 'aa' es idéntico a otra instancia recién creada de la clase A utilizando 'aa is a()'.
+
+A continuación, asigna el método 'y' de la instancia 'aa' a la variable 'z' (es decir, 'z' es una referencia al método 'y' de la instancia 'aa'). Luego, llama al método 'y' de la instancia 'aa' utilizando una tupla vacía '()' y lo imprime en la pantalla.
+
+Luego, llama al método 'y' de una nueva instancia de la clase A utilizando una tupla que contiene una instancia de la clase A y la referencia 'z' (es decir, 'a().y((a,z))') y lo imprime en la pantalla.
+
+Finalmente, llama al método 'y' de la instancia 'aa' utilizando una tupla que contiene la referencia 'z', el número entero '1' y la cadena de caracteres 'z' (es decir, 'aa.y((z,1,'z'))') y lo imprime en la pantalla.
